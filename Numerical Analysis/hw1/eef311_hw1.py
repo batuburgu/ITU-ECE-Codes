@@ -116,7 +116,7 @@ def gauss_elimination(filepath,size,A,b):
         else:
             file.write("Dependent Matrix! Infinite solutions")
             file.close()
-
+# solves the system by using Jacobi Method and writes the x variables to the file (Also indicates it if the iteration limit is reached)
 def jacobi_method(filepath,size,A,b):
     x = np.zeros(size, dtype=float)
     x_calc = np.zeros(size,dtype=float)
